@@ -19,3 +19,25 @@ document.querySelector(".error-btn").addEventListener('click', () => {
         position: "bottom-right"
     })
 })
+
+document.querySelector(".warn-btn").addEventListener('click', () => {
+    saberToast.warn({
+        title: "حدث خطأ ما",
+        text: "يرجى المحاولة مرة اخرى",
+        delay: 200,
+        duration: 2600,
+        rtl: true,
+        position: "bottom-right"
+    })
+})
+
+document.querySelector(".info-btn").addEventListener('click', () => {
+    saberToast.info({
+        title: "حدث خطأ ما",
+        text: "يرجى المحاولة مرة اخرى",
+        delay: 200,
+        duration: 2600,
+        rtl: true,
+        position: "bottom-right"
+    })
+})

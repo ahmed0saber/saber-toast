@@ -47,7 +47,6 @@ main {
 }
 
 .example button {
-    flex: 1;
     padding: 12px;
     color: #F7F7F7;
     font-size: 20px;
@@ -57,6 +56,7 @@ main {
     -moz-border-radius: 6px;
     -ms-border-radius: 6px;
     -o-border-radius: 6px;
+    width: calc(50% - 6px);
 }
 
 .example .error-btn {
@@ -65,4 +65,12 @@ main {
 
 .example .success-btn {
     background-color: #28a745;
+}
+
+.example .warn-btn {
+    background-color: #BF9725;
+}
+
+.example .info-btn {
+    background-color: #5953FF;
 }
