@@ -52,7 +52,7 @@ class SaberToast {
         this.fire(params)
     }
     fire(params) {
-        const DEFAULT_RTL = document.querySelector('html').getAttribute('dir').toLowerCase() === 'rtl';
+        const DEFAULT_RTL = document.querySelector('html').getAttribute('dir')?.toLowerCase() === 'rtl';
         const { title, text, delay, duration, rtl, position } = { title: "", text: "", delay: 200, duration: 2600, rtl: DEFAULT_RTL, position: "bottom-right", ...params }
         const div = document.createElement('div')
         div.classList.add('saber-toast')
