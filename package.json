@@ -1,0 +1,34 @@
+{
+    "name": "saber-toast",
+    "version": "1.1.0",
+    "description": "Saber Toast is a library for all your toasts",
+    "license": "MIT",
+    "main": "saber-toast.js",
+    "author": {
+        "name": "Ahmed Saber",
+        "email": "ahmed0saber33@gmail.com",
+        "url": "https://github.com/ahmed0saber"
+    },
+    "keywords": [
+        "toast",
+        "saber-toast",
+        "notifications"
+    ],
+    "repository": {
+        "url": "https://github.com/krypton225/saber-toast.git",
+        "type": "git"
+    },
+    "bugs": {
+        "email": "ahmed0saber33@gmail.com",
+        "url": "https://github.com/ahmed0saber/saber-toast/issues"
+    },
+    "directories": {
+        "example": "example"
+    },
+    "scripts": {
+        "sass:watch": "sass --no-source-map ./src/saber-toast.scss:dist/saber-toast.css --watch"
+    },
+    "devDependencies": {
+        "sass": "^1.62.1"
+    }
+}
