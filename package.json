@@ -27,6 +27,7 @@
     },
     "scripts": {
         "sass:watch": "sass --no-source-map ./src/scss/saber-toast.scss:dist/saber-toast.css --watch",
+        "sass:min:production": "sass --no-source-map ./src/scss/saber-toast.scss:dist/saber-toast.min.css --style=compressed",
         "lint": "npx stylelint ./src/scss/**/*.scss"
     },
     "devDependencies": {
