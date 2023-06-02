@@ -30,6 +30,8 @@ $justify-content-values: (
     inherit
 ) !default;
 
+$flex-wrap-values: (nowrap, wrap, wrap-reverse, "", no, yes, w, wrap-rev, w-rev, inherit) !default;
+
 $flex-direction-props: (
     -webkit-box-orient,
     -webkit-box-direction,
