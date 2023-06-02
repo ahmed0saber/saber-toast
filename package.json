@@ -27,11 +27,14 @@
     },
     "scripts": {
         "sass:watch": "sass --no-source-map ./src/scss/saber-toast.scss:dist/saber-toast.css --watch",
+        "prod": "webpack --mode production",
         "lint": "npx stylelint ./src/scss/**/*.scss"
     },
     "devDependencies": {
         "sass": "^1.62.1",
         "stylelint": "^15.6.2",
-        "stylelint-config-standard-scss": "^9.0.0"
+        "stylelint-config-standard-scss": "^9.0.0",
+        "webpack": "^5.85.0",
+        "webpack-cli": "^5.1.1"
     }
 }
