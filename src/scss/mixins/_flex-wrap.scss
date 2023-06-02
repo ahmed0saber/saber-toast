@@ -1,0 +1,20 @@
+@use "sass:list";
+@use "sass:math";
+@use "../abstract/variables" as var;
+@use "./vendor-prefix/prefix" as prefix;
+
+@mixin flex-wrap($val: nowrap) {
+    @if not index(var.$flex-wrap-values, $val) {
+        @error "$val of flex-wrap must has one of these units: (#{var.$flex-wrap-values})";
+    }
+
+    @if $val == "" or $val == no or $val == nowrap {
+        @include prefix.prefixing-ms(flex-wrap, nowrap);
+    } @else if $val == wrap or $val == w or $val == yes {
+        @include prefix.prefixing-ms(flex-wrap, wrap);
+    } @else if $val == wrap-reverse or $val == wrap-rev or $val == w-rev {
+        @include prefix.prefixing-ms(flex-wrap, wrap-reverse);
+    } @else {
+        @include prefix.prefixing-ms(flex-wrap, $val);
+    }
+}
