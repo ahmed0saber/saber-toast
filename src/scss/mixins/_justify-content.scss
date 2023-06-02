@@ -1,0 +1,12 @@
+@use "sass:list";
+@use "../abstract/variables" as var;
+
+@mixin justify-content($value: flex-start) {
+    @if not list.index(var.$justify-content-values, $value) {
+        @error "$value argument must has one of these units: (#{var.$justify-content-values})";
+    }
+
+    @each $prop in var.$justify-content-props {
+        #{$prop}: $value;
+    }
+}
