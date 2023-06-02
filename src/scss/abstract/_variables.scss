@@ -1,0 +1,118 @@
+/* stylelint-disable scss/dollar-variable-empty-line-before */
+
+$flex-prefixes-values: (-webkit-box, -webkit-flex, -ms-flexbox, -moz-box, flex) !default;
+
+$align-items-props: (-webkit-box-align, -webkit-align-items, -ms-flex-align, -moz-align-items, align-items) !default;
+
+$align-items-values: (normal, stretch, start, end, flex-start, flex-end, center, baseline, inherit) !default;
+
+$justify-content-props: (
+    -webkit-box-pack,
+    -webkit-justify-content,
+    -ms-flex-pack,
+    -moz-justify-content,
+    justify-content
+) !default;
+
+$justify-content-values: (
+    normal,
+    stretch,
+    start,
+    end,
+    right,
+    left,
+    flex-start,
+    flex-end,
+    center,
+    space-between,
+    space-around,
+    space-evenly,
+    inherit
+) !default;
+
+$flex-direction-props: (
+    -webkit-box-orient,
+    -webkit-box-direction,
+    -webkit-flex-direction,
+    -ms-flex-direction,
+    -moz-flex-direction,
+    -o-flex-direction,
+    flex-direction
+) !default;
+
+$flex-direction-values: (row, r, row-reverse, r-rev, column, col, column-reverse, col-rev, "") !default;
+
+$flex-direction-column-values: (vertical, normal, column, column) !default;
+
+$merge-flex-direction-column: (
+    -webkit-box-orient: vertical,
+    -webkit-box-direction: normal,
+    -webkit-flex-direction: column,
+    -ms-flex-direction: column,
+    -moz-flex-direction: column,
+    -o-flex-direction: column,
+    flex-direction: column
+);
+
+$flex-direction-column-reverse-values: (vertical, reverse, column-reverse, column-reverse) !default;
+
+$merge-flex-direction-column-reverse: (
+    -webkit-box-orient: vertical,
+    -webkit-box-direction: reverse,
+    -webkit-flex-direction: column-reverse,
+    -ms-flex-direction: column-reverse,
+    -moz-flex-direction: column-reverse,
+    -o-flex-direction: column-reverse,
+    flex-direction: column-reverse
+);
+
+$flex-direction-row-values: (horizontal, normal, row, row) !default;
+
+$merge-flex-direction-row: (
+    -webkit-box-orient: horizontal,
+    -webkit-box-direction: normal,
+    -webkit-flex-direction: row,
+    -ms-flex-direction: row,
+    -moz-flex-direction: row,
+    -o-flex-direction: row,
+    flex-direction: row
+);
+
+$flex-direction-row-reverse-values: (horizontal, reverse, row-reverse, row-reverse) !default;
+
+$merge-flex-direction-row-reverse: (
+    -webkit-box-orient: horizontal,
+    -webkit-box-direction: reverse,
+    -webkit-flex-direction: row-reverse,
+    -ms-flex-direction: row-reverse,
+    -moz-flex-direction: row-reverse,
+    -o-flex-direction: row-reverse,
+    flex-direction: row-reverse
+);
+
+$main-units: (#{"%"}, rem, px, em) !default;
+
+$main-dimensions: (width, w, height, h) !default;
+
+$main-mq-types: (min, max) !default;
+
+$breakpoints: (
+    "mob-min": 320px,
+    "mob": 400px,
+    "mob-wide": 480px,
+    "xs": 576px,
+    "sm-tab": 640px,
+    "sm": 767px,
+    "sm-wide": 870px,
+    "sm-max": 930px,
+    "md": 991px,
+    "md-max": 1150px,
+    "lg": 1200px,
+    "lg-max": 1300px,
+    "xl": 1400px,
+    "xl-max": 1550px,
+    "xl-2": 1900px,
+    "xl-3": 2400px,
+    "xl-4": 2800px,
+    "xxl": 3000px,
+) !default;
