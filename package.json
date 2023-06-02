@@ -26,7 +26,7 @@
         "example": "example"
     },
     "scripts": {
-        "sass:watch": "sass --no-source-map ./src/saber-toast.scss:dist/saber-toast.css --watch"
+        "sass:watch": "sass --no-source-map ./src/scss/saber-toast.scss:dist/saber-toast.css --watch"
     },
     "devDependencies": {
         "sass": "^1.62.1"
