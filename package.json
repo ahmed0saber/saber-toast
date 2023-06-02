@@ -26,9 +26,12 @@
         "example": "example"
     },
     "scripts": {
-        "sass:watch": "sass --no-source-map ./src/scss/saber-toast.scss:dist/saber-toast.css --watch"
+        "sass:watch": "sass --no-source-map ./src/scss/saber-toast.scss:dist/saber-toast.css --watch",
+        "lint": "npx stylelint ./src/scss/**/*.scss"
     },
     "devDependencies": {
-        "sass": "^1.62.1"
+        "sass": "^1.62.1",
+        "stylelint": "^15.6.2",
+        "stylelint-config-standard-scss": "^9.0.0"
     }
 }
