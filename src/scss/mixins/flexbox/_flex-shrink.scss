@@ -1,6 +1,6 @@
 @use "sass:list";
-@use "../abstract/variables" as var;
-@import "../functions/cut-unit";
+@use "../../abstract/variables" as var;
+@import "../../functions/cut-unit";
 
 @mixin flex-shrink($val: 0) {
     @if type-of($val) != number {

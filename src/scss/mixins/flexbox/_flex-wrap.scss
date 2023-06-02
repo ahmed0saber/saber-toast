@@ -1,7 +1,7 @@
 @use "sass:list";
 @use "sass:math";
-@use "../abstract/variables" as var;
-@use "./vendor-prefix/prefix" as prefix;
+@use "../../abstract/variables" as var;
+@use "..//vendor-prefix/prefix" as prefix;
 
 @mixin flex-wrap($val: nowrap) {
     @if not index(var.$flex-wrap-values, $val) {

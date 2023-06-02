@@ -1,5 +1,5 @@
 @use "sass:list";
-@use "../abstract/variables" as var;
+@use "../../abstract/variables" as var;
 
 @mixin align-items($value: normal) {
     @if not list.index(var.$align-items-values, $value) {

@@ -1,7 +1,7 @@
 @use "sass:list";
 @use "sass:math";
-@use "../abstract/variables" as var;
-@import "../functions/cut-unit";
+@use "../../abstract/variables" as var;
+@import "../../functions/cut-unit";
 
 @mixin flex-basis($val: auto) {
     @if type-of($val) == string or type-of($val) == number {

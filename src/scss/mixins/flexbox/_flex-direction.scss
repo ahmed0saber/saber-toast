@@ -1,7 +1,7 @@
 /* stylelint-disable scss/no-global-function-names */
 @use "sass:list";
 @use "sass:map";
-@use "../abstract/variables" as var;
+@use "../../abstract/variables" as var;
 
 @mixin flex-dir($value: row) {
     @if not list.index(var.$flex-direction-values, $value) {

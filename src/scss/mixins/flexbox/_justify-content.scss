@@ -1,5 +1,5 @@
 @use "sass:list";
-@use "../abstract/variables" as var;
+@use "../../abstract/variables" as var;
 
 @mixin justify-content($value: flex-start) {
     @if not list.index(var.$justify-content-values, $value) {
