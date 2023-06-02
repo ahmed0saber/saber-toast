@@ -1,0 +1,41 @@
+@use "sass:list";
+@use "../abstract/variables" as var;
+
+/*
+    * @param:
+            * - {String} $type - The type of query you want (min | max).
+            * - {String} $dimension - The dimension you want. It will be width or height or (w, h).
+            * - {String} $breakpoint-name - Specify the breakpoint name from breakpoints map.
+    * @output: Media query with what you specified.
+    * @return: Nothing.
+*/
+
+@mixin mq($type: min, $dimension: w, $breakpoint-name: md) {
+    @if not list.index(var.$main-mq-types, $type) {
+        @error "#{$type} dose not exist in list: (#{var.$main-mq-types})";
+    }
+
+    @if not list.index(var.$main-dimensions, $dimension) {
+        @error "#{$dimension} dose not exist in list: (#{var.$main-dimensions})";
+    }
+
+    @if map-has-key(var.$breakpoints, $breakpoint-name) {
+        $actual-dimension: map_get(var.$breakpoints, $breakpoint-name);
+
+        @if $type == max {
+            $actual-dimension: $actual-dimension - 1px;
+        }
+
+        @if $dimension == width or $dimension == w {
+            @media only screen and (#{$type}-width: $actual-dimension) {
+                @content;
+            }
+        } @else if $dimension == height or $dimension == h {
+            @media only screen and (#{$type}-height: $actual-dimension) {
+                @content;
+            }
+        }
+    } @else {
+        @error "Please, Enter the valid breakpoint. #{$breakpoint-name} dose not exist in (#{var.$breakpoints})";
+    }
+}
