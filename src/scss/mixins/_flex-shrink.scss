@@ -1,0 +1,13 @@
+@use "sass:list";
+@use "../abstract/variables" as var;
+@import "../functions/cut-unit";
+
+@mixin flex-shrink($val: 0) {
+    @if type-of($val) != number {
+        @error "$val of flex-shrink argument must be of type number.";
+    }
+
+    @each $prop in var.$flex-shrink-props {
+        #{$prop}: cut-unit($val);
+    }
+}

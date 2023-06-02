@@ -32,6 +32,31 @@ $justify-content-values: (
 
 $flex-wrap-values: (nowrap, wrap, wrap-reverse, "", no, yes, w, wrap-rev, w-rev, inherit) !default;
 
+$flex-shrink-props: (
+    -webkit-flex-shrink,
+    -ms-flex-negative,
+    -ms-flex-shrink,
+    -moz-box-flex,
+    -moz-flex-shrink,
+    flex-shrink
+) !default;
+
+$flex-shrink-values: (initial, inherit) !default;
+
+$flex-grow-props: (-webkit-flex-grow, -webkit-box-flex, -ms-flex-positive, -moz-box-flex, flex-grow) !default;
+
+$flex-basis-props: (
+    -webkit-flex-basis,
+    -ms-flex-basis,
+    -ms-flex-preferred-size,
+    -moz-flex-basis,
+    -moz-box-sizing,
+    -o-flex-basis,
+    flex-basis
+) !default;
+
+$flex-basis-values: (max-content, min-content, fit-content, content, inherit, auto) !default;
+
 $flex-direction-props: (
     -webkit-box-orient,
     -webkit-box-direction,
