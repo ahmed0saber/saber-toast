@@ -1,0 +1,49 @@
+@mixin prefix-val-all($prop, $value) {
+    #{$prop}: -webkit-#{$value};
+    #{$prop}: -moz-#{$value};
+    #{$prop}: -ms-#{$value};
+    #{$prop}: -o-#{$value};
+    #{$prop}: #{$value};
+}
+
+@mixin prefix-val-web-moz-ms($prop, $value) {
+    #{$prop}: -webkit-#{$value};
+    #{$prop}: -moz-#{$value};
+    #{$prop}: -ms-#{$value};
+    #{$prop}: #{$value};
+}
+
+@mixin prefix-val-web-moz($prop, $value) {
+    #{$prop}: -webkit-#{$value};
+    #{$prop}: -moz-#{$value};
+    #{$prop}: #{$value};
+}
+
+@mixin prefix-val-web-ms($prop, $value) {
+    #{$prop}: -webkit-#{$value};
+    #{$prop}: -ms-#{$value};
+    #{$prop}: #{$value};
+}
+
+@mixin prefix-val-web-o($prop, $value) {
+    #{$prop}: -webkit-#{$value};
+    #{$prop}: -o-#{$value};
+    #{$prop}: #{$value};
+}
+
+@mixin prefix-val-moz-o($prop, $value) {
+    #{$prop}: -moz-#{$value};
+    #{$prop}: -o-#{$value};
+    #{$prop}: #{$value};
+}
+
+@mixin prefix-val-ms($prop, $value) {
+    #{$prop}: -ms-#{$value};
+    #{$prop}: #{$value};
+}
+
+@mixin prefix-val-ms-o($prop, $value) {
+    #{$prop}: -ms-#{$value};
+    #{$prop}: -o-#{$value};
+    #{$prop}: #{$value};
+}
