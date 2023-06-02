@@ -1,14 +1,12 @@
 @use "sass:math";
 
-/*
-    * This code belongs to: Kitty Giraudel.
-    * You can see that in: https://css-tricks.com/snippets/sass/strip-unit-function/
-    * We updated the using of math lib of sass.
+//  This code belongs to: Kitty Giraudel.
+// You can see that in: https://css-tricks.com/snippets/sass/strip-unit-function/
+// We updated the using of math lib of sass.
 
-    * @param: {Number} $num - The number with its unit to remove the unit from it.
-    * @output: '$num'.
-    * @return: number without its unit.
-*/
+// @param: {Number} $num - The number with its unit to remove the unit from it.
+// @output: '$num'.
+// @return: number without its unit.
 
 @function cut-unit($num) {
     @if type-of($num) == "number" and not unitless($num) {

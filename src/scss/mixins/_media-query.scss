@@ -1,14 +1,12 @@
 @use "sass:list";
 @use "../abstract/variables" as var;
 
-/*
-    * @param:
-            * - {String} $type - The type of query you want (min | max).
-            * - {String} $dimension - The dimension you want. It will be width or height or (w, h).
-            * - {String} $breakpoint-name - Specify the breakpoint name from breakpoints map.
-    * @output: Media query with what you specified.
-    * @return: Nothing.
-*/
+// * @param:
+// * - {String} $type - The type of query you want (min | max).
+// * - {String} $dimension - The dimension you want. It will be width or height or (w, h).
+// * - {String} $breakpoint-name - Specify the breakpoint name from breakpoints map.
+// * @output: Media query with what you specified.
+// * @return: Nothing.
 
 @mixin mq($type: min, $dimension: w, $breakpoint-name: md) {
     @if not list.index(var.$main-mq-types, $type) {
