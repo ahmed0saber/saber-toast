@@ -1,0 +1,17 @@
+$color-map: (
+    white-clr-1: #ffffff,
+    white-clr-2: #f1f1f1,
+    white-clr-3: #f7f7f7,
+    box-shadow-clr: #0000001a,
+    black-1: #323232,
+    bg-error: #dc3545,
+    bg-success: #28a745,
+    bg-warn: #bf9725,
+    bg-info: #5953ff,
+);
+
+:root {
+    @each $clr, $val in $color-map {
+        --#{$clr}: #{$val};
+    }
+}
