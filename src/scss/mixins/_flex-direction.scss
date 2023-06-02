@@ -1,0 +1,28 @@
+/* stylelint-disable scss/no-global-function-names */
+@use "sass:list";
+@use "sass:map";
+@use "../abstract/variables" as var;
+
+@mixin flex-dir($value: row) {
+    @if not list.index(var.$flex-direction-values, $value) {
+        @error "$value argument must has one of these values: (#{var.$flex-direction-values})";
+    }
+
+    @if $value == column or $value == col {
+        @each $prop, $val in var.$merge-flex-direction-column {
+            #{$prop}: $val;
+        }
+    } @else if $value == row or $value == r or $value == "" {
+        @each $prop, $val in var.$merge-flex-direction-row {
+            #{$prop}: $val;
+        }
+    } @else if $value == row-reverse or $value == r-rev {
+        @each $prop, $val in var.$merge-flex-direction-row-reverse {
+            #{$prop}: $val;
+        }
+    } @else if $value == column-reverse or $value == col-rev {
+        @each $prop, $val in var.$merge-flex-direction-column-reverse {
+            #{$prop}: $val;
+        }
+    }
+}
