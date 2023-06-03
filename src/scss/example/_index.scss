@@ -1,0 +1,57 @@
+// stylelint-disable at-rule-empty-line-before
+// stylelint-disable declaration-empty-line-before
+
+@import "../mixins";
+@import "../functions";
+
+main {
+    max-width: px(600);
+    width: 100%;
+    padding: px(12);
+    border: px(2) solid var(--black-1);
+    @include prefixing-all(border-radius, px(6));
+}
+
+.example {
+    h1 {
+        color: var(--black-1);
+        font-size: px(32);
+    }
+
+    p {
+        margin: px(10) 0 px(16);
+        font-size: px(22);
+        color: var(--black-1);
+    }
+
+    .btns {
+        @include flex-fstart-stretch;
+        @include flex-wrap(yes);
+        gap: px(12);
+
+        button {
+            width: calc(50% - px(6));
+            padding: px(12);
+            @include prefixing-all(border-radius, px(6));
+            color: var(--white-clr-3);
+            font-size: px(20);
+            cursor: pointer;
+
+            &.error-btn {
+                background-color: var(--bg-error-example);
+            }
+
+            &.success-btn {
+                background-color: var(--bg-success-example);
+            }
+
+            &.warn-btn {
+                background-color: var(--bg-warn-example);
+            }
+
+            &.info-btn {
+                background-color: var(--bg-info-example);
+            }
+        }
+    }
+}
