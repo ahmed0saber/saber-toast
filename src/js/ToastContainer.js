@@ -27,11 +27,19 @@ const SaberToastContainer = (function () {
         document.body.append(topLeftContainer);
     }
 
+    function createAll() {
+        createBottomLeft();
+        createBottomRight();
+        createTopLeft();
+        createTopRight();
+    }
+
     return {
         createBottomLeft,
         createBottomRight,
         createTopLeft,
-        createTopRight
+        createTopRight,
+        createAll
     };
 })();
 
