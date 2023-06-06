@@ -1,0 +1,10 @@
+@import "./flex";
+@import "./justify-content";
+@import "./align-items";
+
+@mixin f-prop($f-dir: row, $justify-content-val: flex-start, $align-items-val: normal) {
+    @include d-flex;
+    @include flex-dir($f-dir);
+    @include justify-content($justify-content-val);
+    @include align-items($align-items-val);
+}

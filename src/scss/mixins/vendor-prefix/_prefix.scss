@@ -1,0 +1,49 @@
+@mixin prefixing-all($property, $value) {
+    -webkit-#{$property}: $value;
+    -moz-#{$property}: $value;
+    -ms-#{$property}: $value;
+    -o-#{$property}: $value;
+    #{$property}: $value;
+}
+
+@mixin prefixing-web-moz-ms($property, $value) {
+    -webkit-#{$property}: $value;
+    -moz-#{$property}: $value;
+    -ms-#{$property}: $value;
+    #{$property}: $value;
+}
+
+@mixin prefixing-web-moz($property, $value) {
+    -webkit-#{$property}: $value;
+    -moz-#{$property}: $value;
+    #{$property}: $value;
+}
+
+@mixin prefixing-web-ms($property, $value) {
+    -webkit-#{$property}: $value;
+    -ms-#{$property}: $value;
+    #{$property}: $value;
+}
+
+@mixin prefixing-web-o($property, $value) {
+    -webkit-#{$property}: $value;
+    -o-#{$property}: $value;
+    #{$property}: $value;
+}
+
+@mixin prefixing-moz-o($property, $value) {
+    -moz-#{$property}: $value;
+    -o-#{$property}: $value;
+    #{$property}: $value;
+}
+
+@mixin prefixing-ms-o($property, $value) {
+    -ms-#{$property}: $value;
+    -o-#{$property}: $value;
+    #{$property}: $value;
+}
+
+@mixin prefixing-ms($property, $value) {
+    -ms-#{$property}: $value;
+    #{$property}: $value;
+}

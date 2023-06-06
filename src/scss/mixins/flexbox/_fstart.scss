@@ -1,0 +1,9 @@
+@import "./flex-prop";
+
+@mixin flex-fstart-normal($dir: row) {
+    @include f-prop($dir, flex-start, normal);
+}
+
+@mixin flex-fstart-stretch($dir: row) {
+    @include f-prop($dir, flex-start, stretch);
+}

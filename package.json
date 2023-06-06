@@ -1,0 +1,38 @@
+{
+    "name": "saber-toast",
+    "version": "1.3.0",
+    "description": "Saber Toast is a library for all your toasts",
+    "license": "MIT",
+    "main": "saber-toast.js",
+    "author": {
+        "name": "Ahmed Saber",
+        "email": "ahmed0saber33@gmail.com",
+        "url": "https://github.com/ahmed0saber"
+    },
+    "keywords": [
+        "toast",
+        "saber-toast",
+        "notifications"
+    ],
+    "repository": {
+        "url": "https://github.com/krypton225/saber-toast.git",
+        "type": "git"
+    },
+    "bugs": {
+        "email": "ahmed0saber33@gmail.com",
+        "url": "https://github.com/ahmed0saber/saber-toast/issues"
+    },
+    "directories": {
+        "example": "example"
+    },
+    "scripts": {
+        "sass:watch": "sass --no-source-map ./src/scss/saber-toast.scss:dist/saber-toast.css --watch",
+        "sass:min:production": "sass --no-source-map ./src/scss/saber-toast.scss:dist/saber-toast.min.css --style=compressed",
+        "lint": "npx stylelint ./src/scss/**/*.scss"
+    },
+    "devDependencies": {
+        "sass": "^1.62.1",
+        "stylelint": "^15.6.2",
+        "stylelint-config-standard-scss": "^9.0.0"
+    }
+}

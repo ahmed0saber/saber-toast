@@ -1,0 +1,11 @@
+@function px($px-val: 1) {
+    @if type-of($px-val) != number {
+        @error "Please, Enter a number to px function";
+    }
+
+    @if $px-val == 0 {
+        @return 0;
+    }
+
+    @return calc($px-val / 16) + rem;
+}
