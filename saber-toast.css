@@ -1,0 +1,160 @@
+.saber-toasts-containers {
+    position: fixed;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    direction: rtl;
+}
+
+.saber-toasts-container-bottom-right {
+    right: 20px;
+    bottom: 20px;
+}
+
+.saber-toasts-container-top-right {
+    right: 20px;
+    top: 20px;
+    flex-direction: column-reverse;
+}
+
+.saber-toasts-container-bottom-left {
+    left: 20px;
+    bottom: 20px;
+}
+
+.saber-toasts-container-top-left {
+    left: 20px;
+    top: 20px;
+    flex-direction: column-reverse;
+}
+
+.saber-toast {
+    width: 320px;
+    height: 80px;
+    background-color: #FFF;
+    box-shadow: 0px 0px 10px #0000001A;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    display: flex;
+    align-items: stretch;
+    gap: 12px;
+}
+
+.saber-toast .right-border {
+    width: 6px;
+    border-radius: 0px 10px 10px 0px;
+    -webkit-border-radius: 0px 10px 10px 0px;
+    -moz-border-radius: 0px 10px 10px 0px;
+    -ms-border-radius: 0px 10px 10px 0px;
+    -o-border-radius: 0px 10px 10px 0px;
+    margin: 0 0 0 2px;
+}
+
+.saber-toast .state-icon-holder {
+    width: 40px;
+    display: grid;
+    place-items: center;
+}
+
+.saber-toast .state-icon {
+    width: 40px;
+    height: 40px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.saber-toast .state-icon svg {
+    width: 50%;
+}
+
+.saber-toast .text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6px;
+    flex: 1;
+}
+
+.saber-toast .title {
+    font-size: 12px;
+}
+
+.saber-toast .text {
+    font-size: 13px;
+    color: #18181A;
+    font-weight: bold;
+}
+
+.saber-toast .close-icon-holder {
+    padding: 12px;
+}
+
+.saber-toast .close-icon {
+    width: 22px;
+    height: 22px;
+    background-color: #F1F1F1;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+}
+
+.saber-toast .close-icon svg {
+    width: 70%;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 520px) {
+    .saber-toasts-containers {
+        width: 240px;
+    }
+
+    .saber-toast {
+        width: 240px;
+        height: 66px;
+        gap: 8px;
+    }
+
+    .saber-toast .state-icon-holder {
+        width: 30px;
+    }
+
+    .saber-toast .state-icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    .saber-toast .title {
+        font-size: 11px;
+    }
+
+    .saber-toast .text {
+        font-size: 12px;
+    }
+
+    .saber-toast .text-container {
+        gap: 3px;
+    }
+
+    .saber-toast .close-icon-holder {
+        padding: 8px;
+    }
+
+    .saber-toast .close-icon {
+        width: 18px;
+        height: 18px;
+    }
+}
