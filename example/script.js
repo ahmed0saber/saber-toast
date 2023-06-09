@@ -1,4 +1,4 @@
-import SaberToast from "../src/js/saber-toast.js";
+import SaberToast from "../src/js/SaberToast.js";
 
 document.querySelector(".success-btn").addEventListener('click', () => {
     new SaberToast().success({
