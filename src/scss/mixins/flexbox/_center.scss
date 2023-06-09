@@ -1,5 +1,0 @@
-@import "./flex-prop";
-
-@mixin flex-center-normal($dir: row) {
-    @include f-prop($dir, center, normal);
-}
