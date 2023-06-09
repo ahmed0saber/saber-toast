@@ -1,0 +1,59 @@
+{
+    "name": "saber-toast",
+    "version": "1.3.1",
+    "description": "Saber Toast is a library for all your toasts",
+    "license": "MIT",
+    "main": "saber-toast.js",
+    "author": {
+        "name": "Ahmed Saber",
+        "email": "ahmed0saber33@gmail.com",
+        "url": "https://github.com/ahmed0saber"
+    },
+    "contributors": [
+        {
+            "name": "Mahmoud Samy",
+            "email": "mahmoudsamy50@outlook.com",
+            "url": "https://github.com/ibnsamy96"
+        },
+        {
+            "name": "Abdelrhman Said",
+            "url": "https://github.com/AbdelrhmanSaid"
+        },
+        {
+            "name": "Khaled Mohamed",
+            "email": "k.mohamed.11.98@gmail.com",
+            "url": "https://github.com/krypton225"
+        }
+    ],
+    "keywords": [
+        "toast",
+        "saber-toast",
+        "notifications"
+    ],
+    "repository": {
+        "url": "https://github.com/krypton225/saber-toast.git",
+        "type": "git"
+    },
+    "bugs": {
+        "email": "ahmed0saber33@gmail.com",
+        "url": "https://github.com/ahmed0saber/saber-toast/issues"
+    },
+    "directories": {
+        "example": "example"
+    },
+    "scripts": {
+        "sass:watch": "sass --no-source-map ./src/scss/saber-toast.scss:./saber-toast.css --watch",
+        "sass:min:production": "sass --no-source-map ./src/scss/saber-toast.scss:./saber-toast.css --style=compressed",
+        "lint": "npx stylelint ./src/scss/**/*.scss",
+        "wb:dev": "webpack --mode development --watch",
+        "wb:prod": "webpack --mode production"
+    },
+    "devDependencies": {
+        "eslint": "^8.42.0",
+        "sass": "^1.62.1",
+        "stylelint": "^15.6.2",
+        "stylelint-config-standard-scss": "^9.0.0",
+        "webpack": "^5.86.0",
+        "webpack-cli": "^5.1.4"
+    }
+}

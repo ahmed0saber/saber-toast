@@ -1,0 +1,26 @@
+@use "sass:list";
+@use "sass:math";
+@use "../../abstract/variables" as var;
+@import "../../functions/cut-unit";
+
+@mixin flex-basis($val: auto) {
+    @if type-of($val) == string or type-of($val) == number {
+        @if type-of($val) == string {
+            @if not list.index(var.$flex-basis-values, $val) {
+                @error "$val argument is string type and must has one of these units: (#{var.$flex-basis-values})";
+            }
+        }
+
+        @if type-of($val) == number and cut-unit($val) != 0 {
+            @if unitless($val) {
+                @error "Please, Enter the unit of $val argument. It must be one of these units (#{var.$flex-basis-values})";
+            }
+        }
+
+        @each $prop in var.$flex-basis-props {
+            #{$prop}: $val;
+        }
+    } @else {
+        @error "$val argument must has be of type number or string.";
+    }
+}
