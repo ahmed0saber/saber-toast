@@ -1,6 +1,6 @@
 import SaberToast from "../src/js/SaberToast.js";
 
-document.querySelector(".success-btn").addEventListener('click', () => {
+document.querySelector(".success-btn").addEventListener("click", () => {
     new SaberToast().success({
         title: "تمت العملية بنجاح",
         text: "تم اضافة المنتج الى السلة",
@@ -11,7 +11,7 @@ document.querySelector(".success-btn").addEventListener('click', () => {
     });
 });
 
-document.querySelector(".error-btn").addEventListener('click', () => {
+document.querySelector(".error-btn").addEventListener("click", () => {
     new SaberToast().error({
         title: "حدث خطأ ما",
         text: "يرجى المحاولة مرة اخرى",
@@ -22,7 +22,7 @@ document.querySelector(".error-btn").addEventListener('click', () => {
     });
 });
 
-document.querySelector(".warn-btn").addEventListener('click', () => {
+document.querySelector(".warn-btn").addEventListener("click", () => {
     new SaberToast().warn({
         title: "حدث خطأ ما",
         text: "يرجى المحاولة مرة اخرى",
@@ -33,7 +33,7 @@ document.querySelector(".warn-btn").addEventListener('click', () => {
     });
 });
 
-document.querySelector(".info-btn").addEventListener('click', () => {
+document.querySelector(".info-btn").addEventListener("click", () => {
     new SaberToast().info({
         title: "حدث خطأ ما",
         text: "يرجى المحاولة مرة اخرى",

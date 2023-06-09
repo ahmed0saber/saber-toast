@@ -52,13 +52,13 @@ class SaberToast {
     }
 
     fire(params) {
-        const DEFAULT_RTL = document.querySelector('html').getAttribute('dir')?.toLowerCase() === 'rtl';
+        const DEFAULT_RTL = document.querySelector("html").getAttribute("dir")?.toLowerCase() === "rtl";
 
         const { title, text, delay, duration, rtl, position } = { title: "", text: "", delay: 200, duration: 2600, rtl: DEFAULT_RTL, position: "bottom-right", ...params };
 
-        const div = document.createElement('div');
+        const div = document.createElement("div");
 
-        div.classList.add('saber-toast');
+        div.classList.add("saber-toast");
 
         div.style.textAlign = rtl ? "right" : "left";
 
@@ -89,25 +89,25 @@ class SaberToast {
         let isRight;
 
         switch (position) {
-            case "bottom-right":
-                document.querySelector('.saber-toasts-container-bottom-right').append(div);
-                isRight = true;
-                break;
-            case "top-right":
-                document.querySelector('.saber-toasts-container-top-right').append(div);
-                isRight = true;
-                break;
-            case "bottom-left":
-                document.querySelector('.saber-toasts-container-bottom-left').append(div);
-                isRight = false;
-                break;
-            case "top-left":
-                document.querySelector('.saber-toasts-container-top-left').append(div);
-                isRight = false;
-                break;
-            default:
-                document.querySelector('.saber-toasts-container-bottom-right').append(div);
-                isRight = true;
+        case "bottom-right":
+            document.querySelector(".saber-toasts-container-bottom-right").append(div);
+            isRight = true;
+            break;
+        case "top-right":
+            document.querySelector(".saber-toasts-container-top-right").append(div);
+            isRight = true;
+            break;
+        case "bottom-left":
+            document.querySelector(".saber-toasts-container-bottom-left").append(div);
+            isRight = false;
+            break;
+        case "top-left":
+            document.querySelector(".saber-toasts-container-top-left").append(div);
+            isRight = false;
+            break;
+        default:
+            document.querySelector(".saber-toasts-container-bottom-right").append(div);
+            isRight = true;
         }
 
         if (isRight) {

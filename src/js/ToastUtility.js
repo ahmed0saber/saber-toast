@@ -36,6 +36,7 @@ const ToastUtility = (function () {
             throw new Error("Please, Enter a valid toast type. It must be one of these: (success, error, warn, info)");
         }
 
+        // eslint-disable-next-line quotes
         let iconSVG = ``;
 
         const iconBgRoot = getComputedStyle(document.body).getPropertyValue(`--icon-${toastType}-bg`);
