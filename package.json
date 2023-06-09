@@ -9,6 +9,22 @@
         "email": "ahmed0saber33@gmail.com",
         "url": "https://github.com/ahmed0saber"
     },
+    "contributors": [
+        {
+            "name": "Mahmoud Samy",
+            "email": "mahmoudsamy50@outlook.com",
+            "url": "https://github.com/ibnsamy96"
+        },
+        {
+            "name": "Abdelrhman Said",
+            "url": "https://github.com/AbdelrhmanSaid"
+        },
+        {
+            "name": "Khaled Mohamed",
+            "email": "k.mohamed.11.98@gmail.com",
+            "url": "https://github.com/krypton225"
+        }
+    ],
     "keywords": [
         "toast",
         "saber-toast",
