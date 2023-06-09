@@ -33,6 +33,7 @@
         "wb:prod": "webpack --mode production"
     },
     "devDependencies": {
+        "eslint": "^8.42.0",
         "sass": "^1.62.1",
         "stylelint": "^15.6.2",
         "stylelint-config-standard-scss": "^9.0.0",
